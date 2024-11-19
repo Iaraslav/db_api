@@ -1,0 +1,7 @@
+@port = {{$dotenv PORT}}
+@host = {{dotenv HOST}}
+@baseurl = http://{{host}}:{{port}}
+### GET base enpoint
+GET {{baseurl}}/
+
+GET {{baseurl}}/test?value=1234&name=tester
